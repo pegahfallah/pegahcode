@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Pegah',
+    lastName:  'Fallah',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Software Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Dubai',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Arabic']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,22 +24,22 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/pegahfallahr',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/pegahf/',
     },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
-    },
+    // {
+    //     name: 'X',
+    //     icon: 'x',
+    //     link: '',
+    // },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:pegahcode@gmail.com',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software Developer and Creator</>,
+    subline: <>Hi, I'm Pegah. Welcome to my corner of the internet.</> 
 }
 
 const about = {
@@ -64,62 +64,86 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://calendly.com/pegahcode/30min'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I am a Software Engineer with a passion for transforming complex challenges into simple, elegant solutions. My work spans AI-driven tools, immersive AR experiences, and the seamless blend of design and technology.</>
     },
-    work: {
-        display: true, // set to false to hide this section
-        title: 'Work Experience',
-        experiences: [
-            {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
-                achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
-                ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
-            }
-        ]
-    },
+    work : {
+     display: true, // set to true to display this section
+    title: 'Work Experience',
+    experiences: [
+        {
+            company: 'Dubai Business Associates, Falcon & Associates',
+            timeframe: 'Sept 2024 – Present',
+            role: 'Innovation Associate',
+            achievements: [
+                <>Selected out of 12,000+ applicants for a leadership and professional development initiative under the patronage of His Highness Sheikh Mohammed bin Rashid Al Maktoum.</>,
+                <>Automated invoicing processes using Excel macros, enabling the generation of 100 invoices in under 5 minutes.</>,
+                <>Defined 40+ customer segments and CRM strategies for MMI and Costa Coffee, resulting in a 20% increase in click-through rates.</>,
+                <>Performed exploratory data analysis on datasets with over 7M records, improving audience targeting and maximizing ROI.</>,
+                <>Automated recurring reporting processes using SQL, Python, and ETL workflows, saving 5+ hours per month.</>,
+                <>Conducted A/B testing to optimize audience segmentation, boosting ad engagement by 25%.</>
+            ],
+            images: []
+        },
+        {
+            company: 'Deloitte',
+            timeframe: 'Sept 2023 – Sept 2024',
+            role: 'Software Developer, Product Engineering',
+            achievements: [
+                <>Developed a provincial application consolidating 82 healthcare employee management systems into one, streamlining processes across the province.</>,
+                <>Engineered a library of responsive, reusable components using React, TypeScript, Tailwind, and Storybook, improving design consistency and saving 3 hours per week.</>,
+                <>Optimized front-end performance by implementing lazy loading and React.memo, achieving a 94% task completion rate without user-reported blockers.</>,
+                <>Enhanced UI accessibility by adhering to ARIA and WCAG standards, achieving a Task Usability Testing score of 75%.</>,
+                <>Contributed to securing a $9 million contract by aligning technical proposals with client needs.</>
+            ],
+            images: []
+        },
+        {
+            company: 'Meta',
+            timeframe: 'May 2022 – Aug 2022',
+            role: 'Technical Program Manager Intern',
+            achievements: [
+                <>Defined 15 success metrics for internal tools and developed a dashboard, guiding improvements in app health across Meta.</>,
+                <>Scoped and managed priorities, risks, timelines, and resource requirements over a 12-week project duration, ensuring 100% of deadlines were met.</>,
+                <>Enhanced collaboration and team efficiency by employing Agile methodologies, resulting in increased productivity.</>,
+                <>Provided data-driven insights that shaped company OKRs, leading to significant productivity improvements.</>
+            ],
+            images: []
+        },
+        {
+            company: 'Honda',
+            timeframe: 'May 2020 – Aug 2021',
+            role: 'Engineering Intern - IT Applications',
+            achievements: [
+                <>Facilitated a critical software migration project for over 500-line control processes through application configuration, QA testing, and Java debugging.</>,
+                <>Led a middleware migration project that reduced engine factory downtime by 11 minutes daily, saving over $100,000 annually.</>
+            ],
+            images: []
+        }
+    ]
+},
     studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
+        display: true, // set to true to display this section
+        title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'York University',
+                description: <>BSc in Computer Science, June 2023.</>,
+                achievements: [
+                    <>Lassonde Scholarship (2021, 2022, 2023), </>,
+                    <>IBM Changemaker Award (2023), </>,
+                    <>YSpace Innovation Award (2023), </>,
+                    <>Alexander Spasov Memorial Award (2021)</>
+                ]
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
@@ -180,76 +204,6 @@ const gallery = {
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-03.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-04.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-06.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-08.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-09.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-11.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
     ]
 }
 

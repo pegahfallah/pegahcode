@@ -303,8 +303,13 @@ export default function About() {
                                         </Text>
                                         <Text
                                             variant="heading-default-xs"
-                                            onBackground="neutral-weak">
+                                            onBackground="neutral-medium">
                                             {institution.description}
+                                        </Text>
+                                            <Text
+                                            variant="heading-default-xs"
+                                            onBackground="neutral-weak">
+                                            {institution.achievements}
                                         </Text>
                                     </Flex>
                                 ))}
