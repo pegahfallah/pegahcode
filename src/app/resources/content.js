@@ -52,8 +52,8 @@ const home = {
 }
 
 const about = {
-    label: 'About',
-    title: 'About me',
+    label: 'Resume',
+    title: 'My Resume',
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
@@ -191,9 +191,9 @@ const blog = {
 }
 
 const work = {
-    label: 'Work',
+    label: 'Projects',
     title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
+    description: `Development projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
 }
