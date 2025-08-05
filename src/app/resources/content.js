@@ -80,8 +80,7 @@ const about = {
             timeframe: 'Sept 2024 – Present',
             role: 'Innovation Associate',
             achievements: [
-                <>Selected out of 12,000+ applicants for a leadership and professional development initiative under the patronage of His Highness Sheikh Mohammed bin Rashid Al Maktoum.</>,
-                <>Automated invoicing processes using Excel macros, enabling the generation of 100 invoices in under 5 minutes.</>,
+                <>Selected out of 5,500+ applicants for a leadership and professional development initiative under the patronage of His Highness Sheikh Mohammed bin Rashid Al Maktoum.</>,
                 <>Defined 40+ customer segments and CRM strategies for MMI and Costa Coffee, resulting in a 20% increase in click-through rates.</>,
                 <>Performed exploratory data analysis on datasets with over 7M records, improving audience targeting and maximizing ROI.</>,
                 <>Automated recurring reporting processes using SQL, Python, and ETL workflows, saving 5+ hours per month.</>,
@@ -96,8 +95,6 @@ const about = {
             achievements: [
                 <>Developed a provincial application consolidating 82 healthcare employee management systems into one, streamlining processes across the province.</>,
                 <>Engineered a library of responsive, reusable components using React, TypeScript, Tailwind, and Storybook, improving design consistency and saving 3 hours per week.</>,
-                <>Optimized front-end performance by implementing lazy loading and React.memo, achieving a 94% task completion rate without user-reported blockers.</>,
-                <>Enhanced UI accessibility by adhering to ARIA and WCAG standards, achieving a Task Usability Testing score of 75%.</>,
                 <>Contributed to securing a $9 million contract by aligning technical proposals with client needs.</>
             ],
             images: []
@@ -182,29 +179,12 @@ const about = {
     }
 }
 
-const blog = {
-    label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
-}
-
 const work = {
     label: 'Projects',
     title: 'My projects',
     description: `Development projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
+    // Create new project pages by adding a new .mdx file to app/work/projects
     // All projects will be listed on the /home and /work routes
 }
 
-const gallery = {
-    label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
-    images: [
-    ]
-}
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, work };

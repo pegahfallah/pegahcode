@@ -252,11 +252,11 @@ export default function About() {
                                                 </Text>
                                             ))}
                                         </Flex>
-                                        {experience.images.length > 0 && (
+                                        {experience.images && experience.images.length > 0 && (
                                             <Flex
                                                 fillWidth paddingTop="m" paddingLeft="40"
                                                 wrap>
-                                                {experience.images.map((image, index) => (
+                                                {experience.images.map((image: any, index) => (
                                                     <Flex
                                                         key={index}
                                                         border="neutral-medium"
@@ -346,7 +346,7 @@ export default function About() {
                                             <Flex
                                                 fillWidth paddingTop="m" gap="12"
                                                 wrap>
-                                                {skill.images.map((image, index) => (
+                                                {skill.images.map((image: any, index) => (
                                                     <Flex
                                                         key={index}
                                                         border="neutral-medium"

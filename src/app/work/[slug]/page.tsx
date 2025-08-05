@@ -87,7 +87,7 @@ export default function Project({ params }: WorkParams) {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						'@context': 'https://schema.org',
-						'@type': 'BlogPosting',
+						'@type': 'CreativeWork',
 						headline: post.metadata.title,
 						datePublished: post.metadata.publishedAt,
 						dateModified: post.metadata.publishedAt,
