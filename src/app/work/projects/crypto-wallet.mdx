@@ -1,0 +1,48 @@
+---
+title: "Cryptographic Wallet"
+publishedAt: "2024-01-01"
+summary: "A Node.js implementation of cryptographic wallet operations and Bitcoin HD wallet key generation using industry-standard libraries."
+images: []
+team: []
+link: "https://github.com/pegahfallah/Cryptographic-Wallet"
+---
+
+# Cryptographic Wallet
+
+## Overview
+
+A collection of cryptographic wallet implementations demonstrating core blockchain security concepts. The project includes a basic cryptographic wallet for key generation, message signing, and encryption, as well as a Bitcoin HD (Hierarchical Deterministic) wallet implementation following BIP-32 and BIP-39 standards.
+
+## Cryptographic Wallet
+
+### Capabilities
+- Generate public and private key pairs
+- Encrypt user input data
+- Sign messages with private key
+- Verify signatures with public key
+- Decrypt encrypted messages
+
+### Usage
+```bash
+node wallet.js
+```
+
+## Bitcoin HD Wallet
+
+An HD wallet is a public/private key tree structure where each node extends to a private and public key starting from the root. The master private key generates key pairs rather than signing transactions directly. This implementation is compatible with Bitcoin.
+
+### Usage
+```bash
+npm install
+npm run start
+```
+
+## Technologies Used
+
+```typescript
+const techStack = {
+  runtime: ['Node.js', 'TypeScript'],
+  cryptography: ['Node.js crypto library'],
+  bitcoin: ['bip39', 'hdkey', 'create-hash', 'bs58check']
+}
+```

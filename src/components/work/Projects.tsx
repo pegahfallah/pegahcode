@@ -1,5 +1,5 @@
 import { getPosts } from '@/app/utils/utils';
-import { Flex } from '@/once-ui/components';
+import { Flex, Heading } from '@/once-ui/components';
 
 import { ProjectCard } from '@/components';
 
@@ -14,9 +14,12 @@ export function Projects({ range }: ProjectsProps) {
         return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
     });
 
+    const mainProjects = sortedProjects.filter((post) => !post.metadata.archive);
+    const archiveProjects = sortedProjects.filter((post) => post.metadata.archive);
+
     const displayedProjects = range
-        ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
-        : sortedProjects;
+        ? mainProjects.slice(range[0] - 1, range[1] ?? mainProjects.length)
+        : mainProjects;
 
     return (
         <Flex
@@ -35,6 +38,25 @@ export function Projects({ range }: ProjectsProps) {
                     link={post.metadata.link || ""}
                 />
             ))}
+            {archiveProjects.length > 0 && !range && (
+                <>
+                    <Heading as="h2" variant="display-strong-s" marginTop="xl">
+                        Archive
+                    </Heading>
+                    {archiveProjects.map((post) => (
+                        <ProjectCard
+                            key={post.slug}
+                            href={`work/${post.slug}`}
+                            images={post.metadata.images}
+                            title={post.metadata.title}
+                            description={post.metadata.summary}
+                            content={post.content}
+                            avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}
+                            link={post.metadata.link || ""}
+                        />
+                    ))}
+                </>
+            )}
         </Flex>
     );
 }
