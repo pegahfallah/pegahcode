@@ -76,6 +76,24 @@ const about = {
     title: 'Work Experience',
     experiences: [
         {
+            company: 'Local',
+            timeframe: 'Jan 2025 – Present',
+            role: 'Full-Stack Developer',
+            achievements: [
+                <>Owned frontend engineering domain, leading the engineering of features across payments, integrations, loyalty, analytics, and merchant dashboard systems in a Next.js application.</>,
+                <>Reduced customer-facing page load times from 4-5s to less than 1s by implementing SWR caching, pagination, code splitting, and splitting monolithic endpoints into lightweight APIs.</>,
+                <>Improved UI/UX flows across menus, item details, and checkout, reducing clicks-to-complete orders by 30%.</>,
+                <>Integrated payment providers (BenefitPay, Apple Pay) and implemented webhook-based syncing for order status, receipts, and payment callbacks.</>,
+                <>Introduced state architecture using Zustand to replace scattered component-level state, reducing re-renders and improving developer velocity.</>,
+                <>Architected backend modules in Laravel (Filament, MySQL) including staff assignment, visit lifecycle, tipping attribution, and configurable checkout fields.</>,
+                <>Reduced frontend bundle size by ~1.2 MB by moving heavy libraries to backend endpoints and implementing lazy loading.</>,
+                <>Led extensive PR reviews, enforced architecture consistency, and reduced technical debt through targeted refactors across controllers, API endpoints, and frontend components.</>,
+                <>Established code quality pipeline: configured ESLint, Prettier, Husky pre-commit hooks and Git workflows.</>,
+                <>Set up testing infrastructure with Jest (unit tests) and Playwright (end-to-end tests), decreasing regression bugs by 40%.</>
+            ],
+            images: []
+        },
+        {
             company: 'Dubai Business Associates, Falcon & Associates',
             timeframe: 'Sept 2024 – Present',
             role: 'Innovation Associate',
